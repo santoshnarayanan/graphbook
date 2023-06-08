@@ -1,7 +1,7 @@
 body {
   background-color: #f6f7f9;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace
+  font-family: "Courier New", Courier, monospace;
 }
 p {
   margin-bottom: 0;
@@ -49,7 +49,7 @@ form textarea {
   padding: 10px;
   border-color: #bbb;
 }
-form [type=submit] {
+form [type="submit"] {
   border: none;
   background-color: #6ca6fd;
   color: #fff;
