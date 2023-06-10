@@ -30,6 +30,10 @@ const root = path.join(__dirname, '../../');
 app.use('/', express.static(path.join(root, 'dist/client')));
 // uploading images
 app.use('/uploads', express.static(path.join(root, 'uploads')));
+
+app.use(cors());
+// add compress at very high  before all responses
+app.use(compress());
 app.get('/', (req, res) => {
     res.sendFile(path.join(root, '/dist/client/index.html'));
 });
